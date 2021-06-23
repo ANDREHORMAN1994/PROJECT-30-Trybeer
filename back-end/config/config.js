@@ -8,6 +8,8 @@ module.exports = {
     host: process.env.HOSTNAME,
     dialect: 'mysql',
     logging: false,
+    apiport: process.env.PORT || 3001,
+    secret: process.env.SECRET || 'forabolsonaro',
   },
   test: {
     username: process.env.MYSQL_USER,
